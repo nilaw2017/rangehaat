@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "highlights",
+  "info": {
+    "name": "Highlights"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "highlightsTitle": {
+      "type": "string",
+      "maxLength": 150,
+      "required": true
+    },
+    "category": {
+      "via": "highlights",
+      "model": "category"
+    }
+  }
+}

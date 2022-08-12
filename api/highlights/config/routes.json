@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/highlights",
+      "handler": "highlights.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/highlights/count",
+      "handler": "highlights.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/highlights/:id",
+      "handler": "highlights.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/highlights",
+      "handler": "highlights.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/highlights/:id",
+      "handler": "highlights.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/highlights/:id",
+      "handler": "highlights.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
